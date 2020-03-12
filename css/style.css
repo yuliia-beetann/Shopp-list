@@ -1,3 +1,5 @@
+*{transition: all .1s ease-in;}
+
 body {
     background-color: #0e0e0e;
     font-family: Roboto, sans-serif;
@@ -60,17 +62,25 @@ label {
     font-size: medium;
 }
 
+.checkbox:nth-child(2n) {
+background-color: #7a7593;
+}
+
 .checkbox:hover {
     background-color: #625e77;
     border-top: solid 3px #ffffff;
     border-bottom: solid 3px #ffffff;
 }
 
+input[type="checkbox"]:active .checkbox {
+background-color: #eb7e7f;
+}
+
 input[type="checkbox"]:checked + label {
     color: #a39fb3;
-    background-color: #7a7593;
     text-decoration: line-through;
 }
+
 
 footer {
     width: 70%;
