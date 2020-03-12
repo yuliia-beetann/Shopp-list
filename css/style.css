@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-        width: 1050px;
-        height: 100vh;
+        width: calc(100% - 40px);
+        height: calc(100vh - 40px);
         margin: auto;
         background-color: #3b3f45;
         border: 20px solid #ffffff;
@@ -37,7 +37,7 @@ h2 {
 
 .form {
     background-color: #88839e;
-    width: 70%;
+    width: 40%;
     margin: 40px auto;
 }
 
@@ -53,13 +53,23 @@ input[type="checkbox"] {
 
 label {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: larger;
     padding-left: 10px;
 }
 
 .det {
     color: #bcbcc7;
     font-size: medium;
+}
+
+.det::before {
+    content: "(";
+    color: #bcbcc7;
+}
+
+.det::after {
+    content: ")";
+    color: #bcbcc7;
 }
 
 .checkbox:nth-child(2n) {
@@ -73,7 +83,7 @@ background-color: #7a7593;
 }
 
 .checkbox:active {
-background-color: #eb7e7f;
+    background-color: #eb7e7f;
 }
 
 input[type="checkbox"]:checked + label {
@@ -81,8 +91,7 @@ input[type="checkbox"]:checked + label {
     text-decoration: line-through;
 }
 
-
 footer {
-    width: 70%;
+    width: 40%;
     margin: 40px auto;
 }
