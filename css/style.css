@@ -72,7 +72,7 @@ background-color: #7a7593;
     border-bottom: solid 3px #ffffff;
 }
 
-input[type="checkbox"]:active .checkbox {
+.checkbox:active {
 background-color: #eb7e7f;
 }
 
@@ -86,4 +86,3 @@ footer {
     width: 70%;
     margin: 40px auto;
 }
-
